@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+/* Incluir # no inicio, depois por o nome. Não esquecer de colocar no inicio do código 
+que esta a imagem */
+     
+        #logo { 
+            width: 300px;   
+        }
+        #icone {
+        /* Para modificar altura incluir o height: 600pix;*/
+        }
+        #publi{
+            /* Centralizar a imagem*/
+            text-align: center;
+            background-image: url('img/light-carbonfiber.png');
+            /*espaço entre as imagens*/
+            padding: 30px;
+            /*incluir borda*/
+            border: 2px solid white;
+        }
+        #publi figcaption{
+            font-family: "Calibri";
+            font-style: italic;
+            /*Regra q só vai afetar o figcaption*/
+        }
+        #publi img{
+            border-radius: 16px;
+            max-width: 100%;
+        }
+        body{
+            /*colocar imagem de fundo*/
+            background-image: url('img/metal.jpg');
+        }
+    </style>
+</head>
+<body>
+    <!--  <img>: usada para exibir imagens na pagina   
+
+    -->
+    <img id="logo" src="img/apptiva-logo.png" alt="Logotipo da empresa Apptiva">
+    <img ig="icone" src="img/apptiva-icon.png" alt="Icone logo">
+    <figure id="publi">
+        <img src="img/distance-education-1000px.jpg " alt="Educação a distancia"
+        aria-label="Menina de cabelo longos escrevendo com um lapis em um caderno, tendo a sua frente um tablet e um notebook" title="imagem meramente ilustrativa">
+            <figcaption>
+                <h2>Estudar na Apptiva é muito bom</h2>
+            </figcaption>
+    </figure>
+    <img src="img/svg-logo.svg" alt="Logotipo do formato svg" style="width: 200px;" />
+
+
+
+
+</body>
+</html>
