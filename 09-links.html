@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
+    <link rel="stylesheet" href="09.css">
 </head>
 <body>
     <!-- 
@@ -29,7 +30,59 @@
                 
 
 
-    -->
 
+       <a>: representa uma ligação (link) para outro conteúdo no mesmo site ou            em outro site. <a> vem do inglês "anchor" (âncora).            Atributos: 
+                      - href: especifica a URL de destino do link (hiperreferência)          
+                        - target: quando seu valor é "_blank", o link de destino será              carregado em uma outra aba do navegador          
+                          - rel (ATRIBUTO SEMÂNTICO): especifica o RELacionamento entre              a página atual e a página/conteúdo linkado.              Valores possíveis:              * external: identifica um link externo   
+
+
+ link externo : link para outro site
+        -->
+    <p> 
+    Acesse agora o <a href="https://fatecfranca.edu.br">Site da Fatec Franca</a>
+    </p>
+     <!-- 
+         link interno: link para pg do mesmo site
+     -->
+    <p>
+    <a href="07-imagens.html">Formato de imagem</a>
+    </p>
+     <!-- 
+         link para imagem ir para site
+     -->
+
+     <a href="08-imagens2.html"><img src="img/apptiva-icon.png"></a>
+
+     <!--
+         link aberto em uma nova aba do navegador
+     -->
+    <div>
+         <a href="http://github.com" target="_blank" rel="external">GitHub</a>
+    </div>
+
+    <div>
+        <ul>
+            <li>
+                <a href="http://github.com" target="_blank" rel="external">GitHub</a>
+            </li>
+            <li>  
+                <a href="http://pudim.com.br" target="_blank" rel="external nofollow">Pudim</a>
+            </li>
+        </ul>
+   </div>
+
+   <p>
+        <a href="08-imagens2.html" rel="prev">&larr; Pagina anterior </a>
+        <a href="10-imagens-dinamicas.html" rel="next">Página seguinte &rarr;</a>
+
+   </p>
+   <p>
+       <a href="img/metal.jpg" download>Faça o download da imagemz </a>
+   </p>
+
+   <p>
+       Aprenda mais sobre <em>Links</em> como a <a href="arquivos/10-apostila-links.pdf" download="Apostila de links do prof Gustavo Guanabara"> apostila prof Guanabara</a>
+   </p>
 </body>
 </html>
