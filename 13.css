@@ -1,0 +1,46 @@
+
+ *{
+    font-family: Calibri, Arial, sans;
+    /*Retirar espaçamento entre as bordas das cedulas */
+    border-collapse: collapse;
+    
+}
+
+h1{text-align: center;
+    color: saddlebrown;
+}
+
+table{
+    border: 1px solid navy;
+    /*centralizando a tabela na pagina
+         0 -> margem superior e inferior 
+         auto -> margem esquerda e direita
+         (autocalculada)
+    */
+    margin: 0 auto;
+}
+td, th{
+    /*Bordas */
+    border: 1px solid orangered;
+    /*Espaçamento interno da borda*/
+    padding: 6px;
+}
+th{
+    background-color: peru;
+}
+
+.dir {
+    /* Alinhamento a direita*/
+    text-align: right;
+}
+.ctz{
+    text-align: center;
+}
+tfoot tr {
+    /*Coloca o resto do texto em negrito*/
+    font-weight: bold;
+    /*coloca o text em italico*/
+    font-style: italic;
+    background-color: sandybrown;
+}
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de medidas</title>
+    
+    <style>
+/*      UNIDADES DE MEDIDAS
+
+        1)  Unidades absolutas
+        -px (pixel) ponto de iluminação da tela
+        -pt (ponto) tamanho das fontes
+        - cm (centimetro)
+        - mm (milimetro)
+        - in (inches, polegadas): para impressão
+
+        2) Unidades Relativas
+        - %  : sempre em relação ao tamanho do pai
+        - em : usada para fontes.Significa que maximo é 1 e minimo 0.0
+
+
+*/
+
+
+        #box1 {
+            background-color: aliceblue;
+            border: 1px solid black;
+            text-align: center;
+            width: 200px /*largura*/;
+            height: 200px /*altura*/;
+            font-size: 35pt;
+        }
+        #box2 {
+            background-color: lightgoldenrodyellow;
+            border: 6px dotted violet;
+            text-align: center;
+            width: 6cm /*largura*/;
+            height: 20mm /*altura*/;
+            font-size: 35pt;
+        }
+        #pai1{
+            background-color: yellow;
+            border: 3px dashed pink;
+            text-align: center;
+            width: 500px;
+            height: 300px;
+            font-size: 25pt;       
+        }
+        #filho1{
+            background-color: red;
+            border: 3px solid green;
+            /*medida relativa*/
+            width: 50%;    /** relativo ao tamanho do pai*/ 
+            height: 55%; 
+            font-size: 0.75em; /* 50% do tamanho da fonte do pai, vai de 0.0 a 1*/
+
+        }
+    
+            
+
+    
+    </style>
+
+</head>
+<body>
+    <div id="box1">
+        Texto 1
+    </div>
+    <div id="box2">
+        Texto 2
+    </div>
+    
+    <div id="pai1">
+        Elemento Pai
+        <div id="filho1">
+            Elemento filho
+        </div>
+    
+
+    </div>
+
+    
+</body>
+</html>
